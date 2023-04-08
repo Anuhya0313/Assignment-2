@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+void main()
+{
+    int n,i,c=0,sum=0;
+    printf("enter the number of odd numbers : ");
+    scanf("%d",&n);
+    printf("odd natural numbers are : \n");
+    
+    for(i=1;c!=n;i++)
+    {
+        if(i%2!=0)
+        {
+            printf("%d ",i);
+            sum=sum+i;
+            c++;
+        }
+    }
+    n=n*n;
+    printf("\nSum of odd n natural numbers is: %d \nsquare of n is: %d \n",sum,n);
+    if(sum==n)
+    {
+        printf("The sum of n odd natural numbers is equal to the square of n ");
+    }
+    else
+    {
+        printf("The sum of n odd natural numbers is not equal to the square of n ");
+    }
+}
+
